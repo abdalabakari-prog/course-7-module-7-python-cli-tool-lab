@@ -19,13 +19,13 @@ def complete_task(args):
     # Look up the user by name
     user = users.get(args.user)
     if not user:
-        print("❌ User not found.")
+        print("User not found.")
         return
     
     # Look up the task by title
     task = user.get_task_by_title(args.title)
     if not task:
-        print("❌ Task not found.")
+        print("Task not found.")
         return
     
     # Mark the task as complete
